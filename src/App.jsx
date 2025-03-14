@@ -1,5 +1,11 @@
+import Greet from "./components/Greet";
+
 function App() {
-  return <>hello world</>;
+  return (
+    <>
+      <Greet />
+    </>
+  );
 }
 
 export default App;
