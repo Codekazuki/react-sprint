@@ -1,6 +1,6 @@
 import React from "react";
 
-const Book = ({ bookName, author }) => {
+const Book = ({ bookName, author, image }) => {
   return (
     <div
       style={{
@@ -11,6 +11,7 @@ const Book = ({ bookName, author }) => {
       }}
     >
       <h2>Book sample</h2>
+      <img style={{ width: "96px" }} src={image} alt={bookName} />
       <h2>{bookName}</h2>
       <h4>{author}</h4>
     </div>
