@@ -11,10 +11,9 @@ const secondBook = {
   author: "Enoch Adeboye",
   image: dp,
 };
-const names = ["John", "Peter", "Michael"];
-const newName = names.map((name) => <h1>{name}</h1>);
+
 const Booklist = () => {
-  return <div>{newName}</div>;
+  return <div>hi</div>;
 };
 
 export default Booklist;
