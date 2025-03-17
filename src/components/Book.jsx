@@ -1,6 +1,6 @@
 import React from "react";
 
-const Book = ({ bookName, author, image }) => {
+const Book = ({ bookName, author, image, children }) => {
   return (
     <div
       style={{
@@ -18,6 +18,7 @@ const Book = ({ bookName, author, image }) => {
       />
       <h2>{bookName || "Unknown name"}</h2>
       <h4>{author}</h4>
+      {children}
     </div>
   );
 };

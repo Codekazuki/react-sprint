@@ -15,7 +15,9 @@ const Booklist = () => {
         image={firstBook.image}
         bookName={firstBook.bookName}
         author={firstBook.author}
-      />
+      >
+        {firstBook.author ? <p>There is an author</p> : <p>No author</p>}
+      </Book>
       <Book
         image={secondBook.image}
         bookName={secondBook.bookName}
