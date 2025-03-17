@@ -6,25 +6,15 @@ const firstBook = {
   author: "Jf odunjo",
   image: dp,
 };
-const secondBook = {};
-
+const secondBook = {
+  bookName: "Open haeven",
+  author: "Enoch Adeboye",
+  image: dp,
+};
+const names = ["John", "Peter", "Michael"];
+const newName = names.map((name) => <h1>{name}</h1>);
 const Booklist = () => {
-  return (
-    <div>
-      <Book
-        image={firstBook.image}
-        bookName={firstBook.bookName}
-        author={firstBook.author}
-      >
-        {firstBook.author ? <p>There is an author</p> : <p>No author</p>}
-      </Book>
-      <Book
-        image={secondBook.image}
-        bookName={secondBook.bookName}
-        author={secondBook.author}
-      />
-    </div>
-  );
+  return <div>{newName}</div>;
 };
 
 export default Booklist;
