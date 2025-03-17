@@ -1,6 +1,9 @@
 import React from "react";
 
-const Book = ({ bookName, author, image, children }) => {
+const Book = ({ bookName, author, image, getBook, id }) => {
+  const getSingleBook = () => {
+    getBook(id);
+  };
   return (
     <div
       style={{
@@ -18,7 +21,7 @@ const Book = ({ bookName, author, image, children }) => {
       />
       <h2>{bookName || "Unknown name"}</h2>
       <h4>{author}</h4>
-      {children}
+      <button onClick={getSingleBook}>get book</button>
     </div>
   );
 };
