@@ -18,8 +18,8 @@ const Booklist = () => {
   };
   return (
     <div>
-      {books.map((book) => {
-        return <Book key={book.id} {...book} getBook={getBook} />;
+      {books.map((book, index) => {
+        return <Book key={book.id} {...book} getBook={getBook} index={index} />;
       })}
     </div>
   );
