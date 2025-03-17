@@ -6,6 +6,7 @@ const Book = ({ bookName, author, image, getBook, id }) => {
   };
   return (
     <div
+      className='book'
       style={{
         backgroundColor: "green",
         margin: "1rem",
@@ -22,6 +23,7 @@ const Book = ({ bookName, author, image, getBook, id }) => {
       <h2>{bookName || "Unknown name"}</h2>
       <h4>{author}</h4>
       <button onClick={getSingleBook}>get book</button>
+      <span>#{id}</span>
     </div>
   );
 };
