@@ -5,11 +5,19 @@ const UseStateBasics = () => {
   const increment = () => {
     setCount(count + 1);
   };
+  const reset = () => {
+    setCount(count * 0);
+  };
+  const decrease = () => {
+    setCount(count - 1);
+  };
   return (
     <>
       <p>Simple react counter</p>
       <h1>{count}</h1>
+      <button onClick={decrease}>decrease</button>
       <button onClick={increment}>Increase</button>
+      <button onClick={reset}>Reset</button>
     </>
   );
 };
