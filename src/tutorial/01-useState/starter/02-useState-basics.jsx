@@ -3,7 +3,8 @@ import { useState } from "react";
 const UseStateBasics = () => {
   const [count, setCount] = useState(0);
   const increment = () => {
-    setCount(count + 1);
+    setCount((c) => c + 1);
+    console.log(count);
   };
   const reset = () => {
     setCount(count * 0);
