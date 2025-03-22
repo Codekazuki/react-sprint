@@ -18,7 +18,9 @@ const UseStateBasics = () => {
       <h1>{count}</h1>
       <button onClick={decrease}>decrease</button>
       <button onClick={increment}>Increase</button>
-      <button onClick={reset}>Reset</button>
+      <button className='btn' onClick={reset}>
+        Reset
+      </button>
     </>
   );
 };

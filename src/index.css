@@ -1,21 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-.book {
-  position: relative;
-}
-span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: brown;
-  padding: 4px 8px;
-  border-radius: 0 4px 4px 0;
-  font-weight: 700;
-}
-*,
 ::after,
 ::before {
   box-sizing: border-box;
